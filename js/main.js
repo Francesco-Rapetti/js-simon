@@ -25,8 +25,13 @@ setTimeout(() => {
     guessNumbers(numbers);
 }, 5.1*1000);
 
+/**
+ * Guesses numbers from user input and checks if they are included in the given array.
+ *
+ * @param {Array} array - The array of numbers to check against.
+ * @return {void} This function does not return a value.
+ */
 function guessNumbers(array) {
-    // numbersElement.classList.add("d-none");
     for (let i = 0; i < array.length; i++) {
         let userNumber = parseInt(prompt("Inserisci un numero da 1 a 99"));
         while (isNaN(userNumber) || userNumber == null || userNumber < 1 || userNumber > 99) {
