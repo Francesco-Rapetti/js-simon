@@ -19,11 +19,11 @@ console.log(numbers);
 
 setTimeout(() => {
     numbersElement.classList.add("d-none");
-}, 5*1000);
+}, 30*1000);
 
 setTimeout(() => {
     guessNumbers(numbers);
-}, 5.1*1000);
+}, 30.1*1000);
 
 /**
  * Guesses numbers from user input and checks if they are included in the given array.
