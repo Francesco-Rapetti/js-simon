@@ -2,6 +2,7 @@ let numbers = [];
 const numbersElement = document.getElementById("numbers");
 const userNumbersContainer = document.getElementById("userNumbersContainer");
 const resultMessage = document.getElementById("resultMessage");
+const seconds = 30;
 let win = true;
 let userNumbers = [];
 let userGuessed = [];
@@ -19,11 +20,11 @@ console.log(numbers);
 
 setTimeout(() => {
     numbersElement.classList.add("d-none");
-}, 30*1000);
+}, seconds*1000);
 
 setTimeout(() => {
     guessNumbers(numbers);
-}, 30.1*1000);
+}, (seconds+0.1)*1000);
 
 /**
  * Guesses numbers from user input and checks if they are included in the given array.
